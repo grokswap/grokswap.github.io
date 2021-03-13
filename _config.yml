@@ -1,6 +1,6 @@
 # site settings
 title: GrokSwap
-subtitle: Swap what you Grok - Knowledge is Social
+subtitle:
 email: jonathan@knowledge.supply
 description:
 baseurl: ''
@@ -15,7 +15,7 @@ phone: (716) 555-5555
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+tiles-count: 4
 
 # social settings
 500px_url:

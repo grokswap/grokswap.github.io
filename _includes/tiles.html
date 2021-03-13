@@ -10,8 +10,10 @@
       <img src="{{ tile.image }}" alt="" />
     </span>
     <header class="major">
-      <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
-      <p>{{ tile.description }}</p>
+      <h3>{{ tile.title || markdownify }}</h3>
+      <p class="lower-margin">{{ tile.description || markdownify }}</p>
+      <p>{{ tile.sub1 || markdownify }}</p>
+      <p>{{ tile.sub2 || markdownify }}</p>
     </header>
   </article>
   {% endfor %}
