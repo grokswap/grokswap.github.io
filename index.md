@@ -1,7 +1,8 @@
 ---
 layout: home
-title: Home
-landing-title: 'Hi, my name is Forty'
+title:
+landing-title: 'What did you *Grok* today?'
+landing-subtitle: '*grok*: to understand profoundly and intuitively'
 description: null
 image: null
 author: null

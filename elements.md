@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Elements
+title: Why?
+description: Knowledge is social. Progress comes from cross-pollination of ideas.
 nav-menu: true
 ---
 
@@ -11,7 +12,7 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h1>Elements</h1>
+			<h1>Why?</h1>
 		</header>
 
 <!-- Content -->
