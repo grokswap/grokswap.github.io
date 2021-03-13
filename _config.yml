@@ -6,16 +6,16 @@ description:
 baseurl: ''
 url:
 author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+street_address:
+city:
+state:
+zip_code:
+country:
+phone:
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 4
+tiles-count: 3
 
 # social settings
 500px_url:
