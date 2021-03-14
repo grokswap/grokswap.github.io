@@ -28,6 +28,10 @@
 		width: 100%;
 		z-index: _misc(z-index-base);
 
+		.logo-image {
+			height: 4em;
+		}
+
 		.logo {
 			border: 0;
 			display: inline-block;
