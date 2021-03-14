@@ -4,15 +4,17 @@
 		<section style="padding-left: 0.5em;">
 			<h3>Register</h3>
 			<p>GrokSwap is currently invite only. Register your interest to receive priority updates.</p>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
+			<form action="#" method="POST">
 				<div class="field half first">
 					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
+					<input type="text" name="name" id="name" required />
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" />
+					<input type="text" name="_replyto" id="email" required/>
 				</div>
+				<input type="checkbox" name="_checked" id="privacy-checked" value="true" required />
+				<label for="privacy-checked">I agree to being contacted about GrokSwap updates and marketing</label>
 				<ul class="actions">
 					<li><input type="submit" value="Register for Updates" class="special" /></li>
 				</ul>
