@@ -27,6 +27,7 @@
 		top: 0;
 		visibility: hidden;
 		width: 20%;
+		min-width: 200px;
 		z-index: _misc(z-index-base) + 2;
 
 		.inner {
