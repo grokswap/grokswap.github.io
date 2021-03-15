@@ -54,7 +54,6 @@
 
 		&.fit {
 			display: block;
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
 			width: 100%;
 		}
 
@@ -66,6 +65,7 @@
 			font-size: 1.25em;
 			height: 3em;
 			line-height: 3em;
+			background-color: _palette(accent3);
 		}
 
 		&.next {

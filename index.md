@@ -1,8 +1,8 @@
 ---
 layout: home
 title:
-landing-title: 'What did you *Grok* today?'
-landing-subtitle: "GrokSwap: an audio platform to share what you've grokked, 2 minutes at a time"
+landing-title: "What did you <span style='color:#9bf1ff'>*Grok*</span> today?"
+landing-subtitle: "Learn and share on the <span style='color:#9bf1ff'>*social knowledge*</span> audio platform, just a few minutes at a time."
 description: null
 image: null
 author: null
