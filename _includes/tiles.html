@@ -11,9 +11,9 @@
     </span>
     <header class="major">
       <h3>{{ tile.title || markdownify }}</h3>
-      <p class="lower-margin">{{ tile.description || markdownify }}</p>
       <p>{{ tile.sub1 || markdownify }}</p>
       <p>{{ tile.sub2 || markdownify }}</p>
+      <p class="lower-margin">{{ tile.description || markdownify }}</p>
     </header>
   </article>
   {% endfor %}
