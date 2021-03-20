@@ -19,12 +19,12 @@
 		{% endfor %}
 		{% for page in site.html_pages %}
 		    {% if page.layout != "home" and page.nav-menu == true %}
-		        <li><a href="{{ page.anchor }}" class="scrolly">{{ page.title-short }}</a></li>
+		        <li><a href="/{{ page.anchor }}" class="scrolly">{{ page.title-short }}</a></li>
 		    {% endif %}
 		{% endfor %}
 	</ul>
 	<ul class="actions vertical">
-		<li><a href="#register" class="button special fit next scrolly">Register</a></li>
-		<li><a href="#" class="button fit next scrolly">Log In</a></li>
+		<li><a href="/#register" class="button special fit next scrolly">Register</a></li>
+		<li><a href="/#register" class="button fit next scrolly">Log In</a></li>
 	</ul>
 </nav>
