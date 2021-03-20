@@ -15,6 +15,9 @@
       <p>{{ tile.sub2 || markdownify }}</p>
       <h4 class="lower-margin">{{ tile.description || markdownify }}</h4>
       {{ tile.content }}
+      {% if tile.form %}
+        {% include form.html %}
+      {% endif %}
     </header>
   </article>
   {% endfor %}
