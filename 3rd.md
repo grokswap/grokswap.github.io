@@ -2,7 +2,7 @@
 layout: page
 title: Register
 title-short: Register
-image: assets/images/pic11.jpg
+image: assets/images/register.jpg
 anchor: '#register'
 nav-menu: false
 ---

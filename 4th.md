@@ -2,7 +2,7 @@
 layout: page
 title: Featured Groks
 title-short: Featured
-image: assets/images/pic09.jpg
+image: assets/images/featured.jpg
 anchor: '#featured'
 nav-menu: true
 ---

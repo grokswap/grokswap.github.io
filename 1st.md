@@ -5,7 +5,7 @@ title-short: grok
 sub1: \ ˈgräk  \
 sub2: 
 description: ': to understand profoundly and intuitively'
-image: assets/images/pic02.jpg
+image: assets/images/grok.jpg
 anchor: '#grok'
 nav-menu: true
 ---

@@ -5,7 +5,7 @@ title-short: swap
 sub1: \ ˈswäp  \
 sub2:
 description: ': to take turns in telling; to make an exchange'
-image: assets/images/pic01.jpg
+image: assets/images/swap.jpg
 anchor: '#swap'
 nav-menu: true
 ---
