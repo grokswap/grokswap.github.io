@@ -42,7 +42,6 @@
 				<li>&copy; {{ site.title }} 2021</li>
 			</ul>
 		</div>
-		{% include cookie-consent.html %}
 	</footer>
 
 </div>
@@ -55,3 +54,19 @@
 	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
 	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+	<script>
+		function readCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0;i < ca.length;i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		}
+		if(readCookie('cookie-notice-dismissed')=='true') {
+			console.log('cookies approved');
+			// add cookies code
+		}
+	</script>
