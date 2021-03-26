@@ -8,4 +8,5 @@ description: ': to take turns in telling; to make an exchange'
 image: assets/images/swap.jpg
 anchor: '#swap'
 nav-menu: true
+link: /about#disinformation
 ---

@@ -6,6 +6,7 @@ sub1: \ ˈgräk  \
 sub2: 
 description: ': to understand profoundly and intuitively'
 image: assets/images/grok.jpg
+link: /about
 anchor: '#grok'
 nav-menu: true
 ---

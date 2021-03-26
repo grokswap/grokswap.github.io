@@ -9,6 +9,9 @@
     <span class="image">
       <img src="{{ tile.image }}" alt="" />
     </span>
+    {% if tile.link %}
+      <a href="{{ tile.link }}">
+    {% endif %}
     <header class="major">
       <h3>{{ tile.title || markdownify }}</h3>
       {{ tile.sub1 || markdownify }}
@@ -19,6 +22,9 @@
         {% include form.html %}
       {% endif %}
     </header>
+    {% if tile.link %}
+      </a>
+    {% endif %}
   </article>
   {% endfor %}
 </section>
