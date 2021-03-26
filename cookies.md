@@ -2,6 +2,7 @@
 layout: post
 title: Cookie Policy
 show_tile: false
+background-image: /assets/images/cookies.jpg
 ---
 <style>
     #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
