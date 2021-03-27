@@ -1,7 +1,7 @@
 # site settings
 title: GrokSwap
 subtitle:
-email: jonathan@knowledge.supply
+email: info@grokswap.com
 description:
 baseurl: ''
 url:
@@ -23,11 +23,11 @@ facebook_url:
 github_url:
 gitlab_url:
 googleplus_url:
-instagram_url: https://instagram.com
+instagram_url: https://instagram.com/grokswap
 linkedin_url:
 pinterest_url:
 slack_url:
-twitter_url: https://twitter.com/
+twitter_url: https://twitter.com/grokswwap
 
 # build settings
 markdown: kramdown
