@@ -2,6 +2,7 @@
 layout: post
 title: Privacy Policy
 show_tile: false
+class: privacy
 ---
 <h6>Last Updated Apr 01, 2021</h6>
 <p>Grokswap is committed to protecting the online privacy of its website visitors and users. This Digital Privacy Statement explains the station’s practices related to the collection and use of information gathered through Grokswap’s website domain, https://www.grokswap.com, and through the station’s other digital properties such as the Grokswap Listen application.

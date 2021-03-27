@@ -10,30 +10,17 @@
 
 <body>
 {% include header.html %}
-
-<section id="banner" class="major">
+<!-- One -->
+<section id="one" class="{{ page.class }}">
     <div class="inner">
-        {% if page.background-image %}<span class="image main"><img src="{{ page.background-image }}" alt=""/></span>{%
-        endif %}
-        <!-- Main -->
-        <div id="main" class="alt">
-
-            <!-- One -->
-            <section id="one">
-                <div class="inner">
-                    <header class="major">
-                        <h1>{{ page.title }}</h1>
-                    </header>
-                    {{ content }}
-                </div>
-            </section>
-
-        </div>
+        <header class="major">
+            <h1>{{ page.title }}</h1>
+        </header>
+        {{ content }}
     </div>
 </section>
-
 {% include footer.html %}
-</div>
+
 </body>
 
 </html>

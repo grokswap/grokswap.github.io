@@ -3,6 +3,7 @@ layout: post
 title: You are what you grok
 short-title: About
 show_tile: false
+class: about
 ---
 
 At <b>GrokSwap</b>, we are driven by three guiding principles:

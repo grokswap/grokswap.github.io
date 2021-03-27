@@ -2,6 +2,7 @@
 layout: post
 title: Terms of Service
 show_tile: false
+class: terms
 ---
 
 
