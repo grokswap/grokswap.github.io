@@ -16,7 +16,18 @@
     <input type="checkbox" name="checked" id="privacy-checked" value="true" required />
     <label for="privacy-checked">I agree to receiving emails from GrokSwap with service updates and marketing</label>
     <ul class="actions">
-      <li><input type="submit" value="Register for Updates" class="special" /></li>
+      <li><input id="register-submit" type="submit" value="Register for Updates" class="special" /></li>
     </ul>
+    <div id="register-notice">
+      <p>Thank you for registering for updates. Grok soon!</p>
+    </div>
+
   </form>
 </section>
+
+<script>
+  document.getElementById('register-submit').addEventListener("click",function() {
+    document.getElementById('register-submit').disabled = 'disabled';
+    document.getElementById('register-notice').style.display = 'block';
+  });
+</script>

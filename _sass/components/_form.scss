@@ -221,3 +221,8 @@
 		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
+
+	#register-notice {
+		color: _palette(accent6);
+		display: none;
+	}
