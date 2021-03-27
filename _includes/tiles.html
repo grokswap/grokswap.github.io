@@ -6,15 +6,16 @@
 <section id="one" class="tiles">
   {% for tile in tiles limit:site.tiles-count %}
   <article>
+    {% if tile.link %}
+    <a href="{{ tile.link }}">
     <span class="image">
       <img src="{{ tile.image }}" alt="" />
     </span>
-    {% if tile.link %}
-      <a href="{{ tile.link }}">
+
     {% endif %}
     <header class="major">
       <h3>{{ tile.title || markdownify }}</h3>
-      {{ tile.sub1 || markdownify }}
+      <h4>{{ tile.sub1 || markdownify }}</h4>
       {{ tile.sub2 || markdownify }}
       <h4 class="lower-margin">{{ tile.description || markdownify }}</h4>
       {{ tile.content }}
