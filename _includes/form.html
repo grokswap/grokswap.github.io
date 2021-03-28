@@ -12,6 +12,9 @@
     <div class="field half">
       <label for="email">Email</label>
       <input type="text" name="email" id="email" required/>
+      <div id="email-notice">
+        <p>Please enter a valid email address</p>
+      </div>
     </div>
     <input type="checkbox" name="checked" id="privacy-checked" value="true" required />
     <label for="privacy-checked">I agree to receiving emails from GrokSwap with service updates and marketing</label>
@@ -27,7 +30,28 @@
 
 <script>
   document.getElementById('register-submit').addEventListener("click",function() {
+    if (validForm()) {
+      setTimeout(disableFunction, 1);
+    };
+  });
+  function validForm() {
+    let email = document.getElementById('email').value
+    return document.getElementById('privacy-checked').checked &&
+            document.getElementById('name').value.length > 0 &&
+            email.length > 0 &&
+            validEmail(email)
+  };
+  function disableFunction() {
     document.getElementById('register-submit').disabled = 'disabled';
     document.getElementById('register-notice').style.display = 'block';
-  });
+  }
+  function validEmail(email)
+  {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email))
+    {
+      return (true)
+    }
+    document.getElementById('email-notice').style.display = 'block';
+    return (false)
+  }
 </script>
