@@ -91,7 +91,7 @@
 
 			&:hover {
 				&:before {
-					opacity: 0;
+					background-image: linear-gradient(_palette(image-cover-dark), _palette(image-cover-dark))
 				}
 			}
 
