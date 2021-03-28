@@ -35,6 +35,7 @@
 
     if(readCookie('cookie-notice-dismissed')=='true') {
         console.log('cookies approved');
+        {% include analytics.js %};
     } else {
         document.getElementById('cookie-notice').style.display = 'block';
     }
