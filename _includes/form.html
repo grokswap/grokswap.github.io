@@ -31,7 +31,7 @@
 <script>
   document.getElementById('register-submit').addEventListener("click",function() {
     if (validForm()) {
-      setTimeout(disableFunction, 1);
+      setTimeout(reloadPage, 1);
     };
   });
   function validForm() {
@@ -53,5 +53,8 @@
     }
     document.getElementById('email-notice').style.display = 'block';
     return (false)
+  }
+  function reloadPage() {
+    window.location.href = window.location.origin + "/updates";
   }
 </script>
