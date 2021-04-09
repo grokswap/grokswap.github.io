@@ -9,22 +9,22 @@
     <span class="image">
       <img src="{{ tile.image }}" alt="" />
     </span>
-    {% if tile.link %}
-      <a href="{{ tile.link }}">
-    {% endif %}
     <header class="major">
+      {% if tile.link %}
+        <a href="{{ tile.link }}">
+      {% endif %}
       <h3>{{ tile.title || markdownify }}</h3>
-      <h4>{{ tile.sub1 || markdownify }}</h4>
+      <h4 style="margin-top: -1.5em;">{{ tile.sub1 || markdownify }}</h4>
       {{ tile.sub2 || markdownify }}
-      <h4>{{ tile.description || markdownify }}</h4>
+      <h4 style="margin-top: -1em;">{{ tile.description || markdownify }}</h4>
+      {% if tile.link %}
+        </a>
+      {% endif %}
       {{ tile.content }}
       {% if tile.form %}
         {% include form.html %}
       {% endif %}
     </header>
-    {% if tile.link %}
-      </a>
-    {% endif %}
   </article>
   {% endfor %}
 </section>

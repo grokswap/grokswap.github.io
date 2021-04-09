@@ -10,3 +10,13 @@ link: /about
 anchor: '#grok'
 nav-menu: true
 ---
+<p>
+    You've just read a book or article, listened to a talk or 
+    podcast, consumed a grok, or made some research findings.
+    Something clicked for you; it now makes sense. You grok it!
+</p>
+<p>
+    You want to share your excitement and new knowledge. This is
+    the place to do it! Start conversations and explore what you
+    can be learning next.
+</p>
