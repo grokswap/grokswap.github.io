@@ -1,8 +1,8 @@
 ---
 layout: home
 title:
-landing-title: "Grok - Swap - Connect"
-landing-subtitle: "A peer-reviewed social media network for sharing knowledge, just a few minutes at a time"
+landing-title: Knowledge Sharing Social Media
+landing-subtitle: Peer reviewed content. Flexible formats. Concise not dumb. 
 show_tile: false
 image: assets/images/banner.jpg
 ---
