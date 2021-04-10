@@ -10,7 +10,7 @@ nav-menu: true
 <section id="featured">
     <section style="height: 100%; padding-left: 0.5em;">
         <h4>Knowledge, not disinformation</h4>
-        <p>Through peer-review and links to sources.</p>
+        <p>Through peer-review for appropriateness and links back to sources.</p>
         <h4>Concise, not fluff</h4>
         <p>Because there's too much to learn to waste time on the unimportant.</p>
         <h4>Flexible formats</h4>
