@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+
 
 {% include head.html %}
 
 <body>
-<link rel="shortcut icon" href="{{ "favicon.ico" | prepend: site.baseurl | prepend: site.url }}" />
 {% include header.html %}
 
     <!-- Banner -->
@@ -22,8 +15,8 @@
             {% if page.image %}
                 <span class="image main">
                     <picture>
-                        <source srcset="{{ site.baseurl }}/{{ page.image }}.webp" type="image/webp">
-                        <img src="{{ site.baseurl }}/{{ page.image }}.jpg" alt="Your alt text" />
+                        <source srcset="{{ page.image }}.webp" type="image/webp">
+                        <img src="{{ page.image }}.jpg" alt="GrokSwap" />
                     </picture>
                 </span>
             {% endif %}
@@ -47,4 +40,3 @@
 
 </body>
 
-</html>

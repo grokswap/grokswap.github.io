@@ -6,6 +6,34 @@
 
 (function($) {
 
+	function setImage($this) {
+		var $image = $this.find('picture'), $img = $image.find('img'),
+			$webp = $image.find('source'),
+			x;
+
+		// Image.
+
+		if ($img.attr('src')) {
+			// Set image.
+			Modernizr.on('webp', function (result) {
+				if (result) {
+					console.log('webp');
+					$this.css('background-image', 'url(' + $webp.attr('srcset') + ')');
+				} else {
+					console.log('no-webp');
+					$this.css('background-image', 'url(' + $img.attr('src') + ')');
+				}
+			});
+
+			// Set position.
+			if (x = $img.data('position'))
+				$image.css('background-position', x);
+
+			// Hide original.
+			$image.hide();
+		}
+	}
+
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
@@ -140,23 +168,9 @@
 			var $tiles = $('.tiles > article');
 
 			$tiles.each(function() {
-
 				var $this = $(this),
-					$image = $this.find('.image'), $img = $image.find('img'),
-					$link = $this.find('.link'),
-					x;
-
-				// Image.
-
-					// Set image.
-						$this.css('background-image', 'url(' + $img.attr('src') + ')');
-
-					// Set position.
-						if (x = $img.data('position'))
-							$image.css('background-position', x);
-
-					// Hide original.
-						$image.hide();
+					$link = $this.find('.link');
+				setImage($this);
 
 				// Link.
 					if ($link.length > 0) {
@@ -227,22 +241,11 @@
 		// Banner.
 			$banner.each(function() {
 
-				var $this = $(this),
-					$image = $this.find('.image'), $img = $image.find('img');
+				var $this = $(this)
 
+				setImage($this);
 				// Parallax.
 					$this._parallax(0.275);
-
-				// Image.
-					if ($image.length > 0) {
-
-						// Set image.
-							$this.css('background-image', 'url(' + $img.attr('src') + ')');
-
-						// Hide original.
-							$image.hide();
-
-					}
 
 			});
 

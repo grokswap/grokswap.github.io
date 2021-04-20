@@ -37,22 +37,42 @@
 
 	}
 
-.cookies {
+.webp .cookies {
+	background-image: linear-gradient(_palette(image-cover-light), _palette(image-cover-light)),
+	url("/assets/images/cookies.webp");
+}
+
+.no-webp .cookies {
 	background-image: linear-gradient(_palette(image-cover-light), _palette(image-cover-light)),
 	url("/assets/images/cookies.jpg");
 }
 
-.privacy {
+.webp .privacy {
+	background-image: linear-gradient(_palette(image-cover-light), _palette(image-cover-light)),
+	url("/assets/images/privacy.webp");
+}
+
+.no-webp .privacy {
 	background-image: linear-gradient(_palette(image-cover-light), _palette(image-cover-light)),
 	url("/assets/images/privacy.jpg");
 }
 
-.terms {
+.webp .terms {
+	background-image: linear-gradient(_palette(image-cover-light), _palette(image-cover-light)),
+	url("/assets/images/terms.webp");
+}
+
+.no-webp .terms {
 	background-image: linear-gradient(_palette(image-cover-light), _palette(image-cover-light)),
 	url("/assets/images/terms.jpg");
 }
 
-.about {
+.webp .about {
+	background-image: linear-gradient(_palette(image-cover-dark), _palette(image-cover-dark)),
+	url("/assets/images/about.webp");
+}
+
+.no-webp .about {
 	background-image: linear-gradient(_palette(image-cover-dark), _palette(image-cover-dark)),
 	url("/assets/images/about.png");
 }

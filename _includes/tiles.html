@@ -1,38 +1,42 @@
 {% if 'posts' == site.tiles-source %}
-    {% assign tiles = site.posts %}
+{% assign tiles = site.posts %}
 {% elsif 'pages' == site.tiles-source %}
-    {% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false" %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false" %}
 {% endif %}
 <section id="one" class="tiles">
-  {% for tile in tiles limit:site.tiles-count %}
-  <article>
-      {% if tile.image %}
-            <span class="image">
+    {% for tile in tiles limit:site.tiles-count %}
+    <article>
+        {% if tile.image %}
+        <span class="image">
                 <picture>
                     <source srcset="{{ tile.image }}.webp" type="image/webp">
-                    <img src="{{ tile.image }}.jpg" alt="{{ tile.title}}" />
+                    <img src="{{ tile.image }}.jpg" alt="{{ tile.title}}"/>
                 </picture>
             </span>
-      {% endif %}
-    <header class="major">
-      {% if tile.link %}
-        <a href="{{ tile.link }}">
-      {% endif %}
-      <h3 style="padding-bottom: 0;">{{ tile.title || markdownify }}</h3>
-      <lottie-player style="text-align: center; margin-top: -2em;" src="{{ tile.animation }}"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>
-            <h4>{{ tile.sub1 || markdownify }}</h4>
+        {% endif %}
+        <header class="major">
+            {% if tile.link %}
+            <a href="{{ tile.link }}">
+                {% endif %}
+                <h3 style="padding-bottom: 0;">{{ tile.title || markdownify }}</h3>
+                {% if tile.animation %}
+                <lottie-player style="text-align: center; margin-top: -2em;" src="{{ tile.animation }}"
+                               background="transparent" speed="1" style="width: 200px; height: 200px;" loop
+                               autoplay></lottie-player>
+                {% endif %}
+                <h4>{{ tile.sub1 || markdownify }}</h4>
 
 
-      {% if tile.link %}
-        </a>
-      {% endif %}
-      {{ tile.content }}
-      {% if tile.form %}
-        {% include form.html %}
-      {% endif %}
-    </header>
-  </article>
-  {% endfor %}
+                {% if tile.link %}
+            </a>
+            {% endif %}
+            {{ tile.content }}
+            {% if tile.form %}
+            {% include form.html %}
+            {% endif %}
+        </header>
+    </article>
+    {% endfor %}
 </section>
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
