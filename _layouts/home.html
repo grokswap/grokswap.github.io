@@ -19,7 +19,14 @@
                 <h1>{{ page.landing-title || markdownify }}</h1>
                 <h3>{{ page.landing-subtitle || markdownify }}</h3>
             </header>
-            {% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
+            {% if page.image %}
+                <span class="image main">
+                    <picture>
+                        <source srcset="{{ site.baseurl }}/{{ page.image }}.webp" type="image/webp">
+                        <img src="{{ site.baseurl }}/{{ page.image }}.jpg" alt="Your alt text" />
+                    </picture>
+                </span>
+            {% endif %}
             <div class="content" >
                 <h3 style="text-transform: uppercase;">{{ site.description }}</h3>
                 <a href="#register" class="button big next scrolly">Register</a>

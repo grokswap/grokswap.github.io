@@ -2,7 +2,7 @@
 layout: page
 title: Why GrokSwap?
 title-short: GrokSwap
-image: assets/images/featured.jpg
+image: assets/images/featured
 anchor: '#featured'
 nav-menu: true
 ---

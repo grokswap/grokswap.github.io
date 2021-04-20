@@ -6,9 +6,14 @@
 <section id="one" class="tiles">
   {% for tile in tiles limit:site.tiles-count %}
   <article>
-    <span class="image">
-      <img src="{{ tile.image }}" alt="" />
-    </span>
+      {% if tile.image %}
+            <span class="image">
+                <picture>
+                    <source srcset="{{ tile.image }}.webp" type="image/webp">
+                    <img src="{{ tile.image }}.jpg" alt="{{ tile.title}}" />
+                </picture>
+            </span>
+      {% endif %}
     <header class="major">
       {% if tile.link %}
         <a href="{{ tile.link }}">
