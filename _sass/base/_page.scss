@@ -37,6 +37,12 @@
 
 	}
 
+.cookies, .privacy, .terms, .about {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .webp .cookies {
 	background-image: linear-gradient(_palette(image-cover-light), _palette(image-cover-light)),
 	url("/assets/images/cookies.webp");
